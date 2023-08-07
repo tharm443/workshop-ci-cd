@@ -5,7 +5,7 @@ node {
     }
 
     
-    stage('Build and Test') {
+    stage('Build and Test Jenkins') {
     steps {
         sh 'echo "Building and testing the project gg"'
 
