@@ -1,0 +1,22 @@
+node {
+    
+    stage('SCM Checkout'){
+      checkout scm
+    }
+
+    
+    stage('Build and Test') {
+    steps {
+        sh 'echo "Building and testing the project"'
+
+        // ติดตั้ง dependencies ด้วย npm
+        sh 'npm install'
+
+        // สร้าง production build ของ Next.js
+        sh 'npm run build'
+
+        // รันโปรเจกต์ Next.js ในโหมด production
+        sh 'npm start'
+    }
+}
+}
