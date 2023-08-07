@@ -7,7 +7,7 @@ node {
     
     stage('Build and Test') {
     steps {
-        sh 'echo "Building and testing the project"'
+        sh 'echo "Building and testing the project gg"'
 
         // ติดตั้ง dependencies ด้วย npm
         sh 'npm install'
